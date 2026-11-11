@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* ربط الخط العربي بمتغير Next.js المعرف في layout.tsx مع بدائل نظامية */
+  --font-arabic: var(--font-cairo), 'Cairo', system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-cairo), 'Cairo', system-ui, -apple-system, sans-serif;
+
+  /* الألوان المستخرجة من الهوية والتطبيق */
+  --color-primary: #004b79;
+  --color-primary-hover: #00385b;
+  --color-primary-dark: #002d4b;
+
+  --color-accent-orange: #df6951;
+  --color-accent-sand: #d6a87c;
+  --color-accent-light-sand: #fbf5ef;
+
+  --color-success-green: #1fa959;
+  --color-rating-yellow: #f5b300;
+
+  /* ألوان الخلفيات والأسطح */
+  --color-surface-card: #ffffff;
+  --color-surface-muted: #f4f5f7;
+  --color-border-subtle: #e5e7eb;
+}
+
+/* إعدادات الاتجاه والخط الافتراضي */
+:root {
+  font-family: var(--font-arabic);
+  direction: rtl;
+}
+
+body {
+  background-color: #fcfbf9;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
